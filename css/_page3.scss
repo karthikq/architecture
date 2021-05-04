@@ -1,0 +1,108 @@
+/** @format */
+
+#page-3 {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
+}
+.third-container {
+  padding: 0 8%;
+  height: 100%;
+}
+.third-contents {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  .third-img {
+    width: 400px;
+    height: 600px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .third-text {
+    color: white;
+    position: relative;
+    bottom: 22%;
+    right: 3%;
+    width: 42rem;
+    h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 3.5rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      letter-spacing: 1.4px;
+    }
+    p {
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+      color: rgb(216, 216, 216);
+      width: 80%;
+      line-height: 1.4;
+      margin-left: 3.2rem;
+    }
+  }
+}
+@media screen and (max-width: 1230px) {
+  .third-container {
+    padding: 0 2%;
+    height: 100%;
+  }
+  .third-contents {
+    .third-text {
+      h2 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 0.9rem;
+        margin-left: 0rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 726px) {
+  .third-contents {
+    .third-text {
+      right: 0rem;
+      left: 0.8rem;
+      h2 {
+        font-size: 1.8rem;
+      }
+      p {
+        font-size: 0.9rem;
+        margin-left: 0rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .third-contents {
+    justify-content: flex-start;
+    position: relative;
+    .third-text {
+      position: absolute;
+      top: 11rem;
+      width: 80%;
+      left: 22%;
+
+      h2 {
+        font-size: 1.4rem;
+      }
+      p {
+        font-size: 0.8rem;
+        margin-left: 0rem;
+        width: 90%;
+        color: rgba(255, 255, 255, 0.589);
+      }
+    }
+    .third-img {
+      width: 220px;
+      height: 450px;
+    }
+  }
+}
